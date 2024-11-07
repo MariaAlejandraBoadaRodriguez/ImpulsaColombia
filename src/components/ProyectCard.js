@@ -10,7 +10,8 @@ function ProjectCard({ project }) {
   const videoPath = `/videos/${project.id}.mp4`;
 
   return (
-    <div className="flip-card">
+    <div className="content-card">
+      <div className="flip-card">
       <div className={`flip-card-inner ${showDescription ? 'flipped' : ''}`}>
         <div className="flip-card-front">
           <h2>{project.name}</h2>
@@ -19,16 +20,17 @@ function ProjectCard({ project }) {
             Tu navegador no soporta el video.
           </video>
           <div style={{ marginTop: '10px' }}>
-            <button onClick={() => navigate('/contact')}>Contactar</button>
-            <button onClick={() => navigate('/donate')}>Donar</button>
-            <button onClick={() => setShowDescription(true)}>Descripción</button>
+            <button className="custom-button" onClick={() => navigate('/contact')}>Contactar</button>
+            <button className="custom-button" onClick={() => navigate('/donate')}>Donar</button>
+            <button className="custom-button" onClick={() => setShowDescription(true)}>Abstrac</button>
           </div>
         </div>
         <div className="flip-card-back">
           <p>{project.description}</p>
-          <button onClick={() => setShowDescription(false)}>Volver</button>
+          <button className="custom-button" onClick={() => setShowDescription(false)}>Volver</button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
