@@ -11,7 +11,7 @@ function Donate() {
     setDonationStatus('¡Tu donación fue exitosa!');
     setTimeout(() => {
       navigate('/reports'); // Redirige a la página de informes después de 2 segundos
-    }, 2000);
+    }, 400);
   };
 
   return (
