@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import ProjectCard from '../components/ProyectCard';
 import Description from '../components/Description';
 import Convocatorias from '../components/Convocatorias'
-import Reports from './Reports';
 
 function Dashboard() {
   const projects = [
@@ -24,7 +23,7 @@ function Dashboard() {
     { id: 14, name: 'Cultura del Café: Del Grano a la Taza', description: 'Esta iniciativa explora y celebra la tradición cafetera, ofreciendo talleres sobre el proceso de preparación y catas de café. El objetivo es educar y crear conciencia sobre la cadena de valor del café, apoyando a los productores locales y fomentando el consumo responsable.' },
   ];
 
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [, setSelectedProject] = useState(null);
 
   const handleProjectSelect = (project) => {
     console.log("Selected Project:", project); // Verificar si el proyecto seleccionado es el correcto
@@ -45,7 +44,7 @@ function Dashboard() {
           <ProjectCard key={project.id} project={project} onClick={() => handleProjectSelect(project)} />
         ))}
       </div>
-      {selectedProject && <Reports project={selectedProject} />}
+      
       <div style={{marginTop: '110px'  }}>
         <Convocatorias />
       </div>

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Convocatorias() {
   return (
-    <convocatorias>
-      <p></p>
-    </convocatorias>
+    <div>
+      
+    </div>
   );
 }
 
