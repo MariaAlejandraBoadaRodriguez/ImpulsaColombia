@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, AreaChart, Area, Tooltip, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer } from 'recharts';
 import './Reports.css';
 
@@ -29,13 +30,22 @@ const yearlyComparison = [
 ];
 
 function Reports() {
+
+  const navigate = useNavigate();
+
+  const handleBackToDashboard = () => {
+    navigate('/');
+  };
+
   return (
     <div className="reports-container">
+      <button onClick={handleBackToDashboard} className="back-button">
+        Home
+      </button>
       <h1 className="reports-title">Indicadores Económicos de Donaciones</h1>
       <p className="thank-you-message">
         ¡Gracias por tu donación! Con tu ayuda, estamos haciendo grandes cosas en nuestro proyecto
       </p>
-      
       <div className="charts-dashboard">
         <div className="chart">
           <h3>Donaciones Mensuales</h3>
