@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Contact from '../pages/Contact';
 import './ProjectCard.css';
 
 function ProjectCard({ project, onClick }) {
   const [showDescription, setShowDescription] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
   // Ruta del video basado en el ID del proyecto
   const videoPath = `/videos/${project.id}.mp4`;
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <div className="content-card" onClick={onClick}>
@@ -21,7 +31,7 @@ function ProjectCard({ project, onClick }) {
               Tu navegador no soporta el video.
             </video>
             <div style={{ marginTop: '10px' }}>
-              <button className="custom-button" onClick={(e) => { e.stopPropagation(); navigate('/contact'); }}>Contactar</button>
+              <button className="custom-button" onClick={(e) => { e.stopPropagation(); handleOpenModal(); }}>Contactar</button>
               <button className="custom-button" onClick={(e) => { e.stopPropagation(); navigate('/donate'); }}>Donar</button>
               <button className="custom-button" onClick={(e) => { e.stopPropagation(); setShowDescription(true); }}>Resumen</button>
             </div>
@@ -34,6 +44,8 @@ function ProjectCard({ project, onClick }) {
           </div>
         </div>
       </div>
+
+      <Contact projectName={project.name} showModal={showModal} onClose={handleCloseModal} />
     </div>
   );
 }
