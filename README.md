@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# ImpulsaColombia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ImpulsaColombia es una plataforma dedicada a conectar emprendedores y proyectos innovadores en Colombia con patrocinadores. La plataforma permite explorar una variedad de proyectos de impacto social, ambiental y cultural, proporcionando un medio para que los patrocinadores puedan contribuir a estos proyectos mediante donaciones.
 
-## Available Scripts
+## Tabla de Contenidos
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- **Home Page**: Página principal con una breve descripción de la plataforma y un botón para ingresar.
+- **Registro e Inicio de Sesión**: Funcionalidad para que los usuarios se registren como patrocinadores o emprendedores.
+- **Panel de Control (Dashboard)**: Muestra una lista de proyectos activos con opciones para visualizar, contactar y donar.
+- **Donaciones**: Página dedicada para realizar donaciones a los proyectos.
+- **Reportes**: Sección con gráficos e indicadores de las donaciones realizadas, mostrando el progreso y el objetivo de financiamiento.
+- **Contacto**: Modal de contacto para que los usuarios puedan enviar mensajes a los responsables de los proyectos.
+  
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para ejecutar este proyecto de manera local, sigue estos pasos:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/MariaAlejandraBoadaRodriguez/ImpulsaColombia.git
+2. Accede al directorio del proyecto:
+   cd ImpulsaColombia
+3. Instala las dependencias:
+   npm install
+4. Inicia el servidor de desarrollo:
+   npm start
+   
+El proyecto estará disponible en http://localhost:3000.
 
-### `npm test`
+# Uso
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Ingresar**: En la página principal, haz clic en "Ingresar" para acceder al sistema.
+- **Registrar un Proyecto**: Los emprendedores pueden registrarse y agregar detalles de su proyecto, incluyendo nombre, descripción y una imagen de portada.
+- **Explorar Proyectos**: Una vez autenticado, accede al dashboard para ver proyectos activos. Haz clic en "Contactar" para enviar un mensaje al administrador del proyecto o en "Donar" para realizar una donación.
+- **Reportes**: Después de una donación, puedes acceder a la sección de reportes para ver los indicadores de financiamiento.
 
-### `npm run build`
+# Estructura del Proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `App.js`: Configuración de las rutas principales de la aplicación, con navegación basada en el estado de inicio de sesión del usuario.
+- `HomePage.js`: Página de bienvenida con una breve introducción y botón de ingreso.
+- `Dashboard.js`: Página principal para usuarios autenticados, mostrando una lista de proyectos activos.
+- `ProjectCard.js`: Componente de tarjeta para mostrar cada proyecto, con opciones para contactar, donar y ver una descripción.
+- `Contact.js`: Modal de contacto para enviar mensajes a los administradores de proyectos.
+- `Donate.js`: Página para realizar donaciones con un formulario de datos de pago.
+- `Reports.js`: Visualización de gráficos de donaciones e indicadores económicos.
+- `RegisterLogin.js`: Página de registro e inicio de sesión con opciones para agregar detalles del proyecto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Scripts Disponibles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+En el directorio del proyecto, puedes ejecutar:
 
-### `npm run eject`
+- `npm start`: Inicia la aplicación en modo de desarrollo.
+- `npm run build`: Genera una versión optimizada para producción en la carpeta `build`.
+- `npm run deploy`: Despliega el proyecto en GitHub Pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Tecnologías Utilizadas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **React Router**: Para el enrutamiento dentro de la aplicación.
+- **Recharts**: Biblioteca para gráficos, utilizada en la sección de reportes.
+- **CSS**: Para el diseño y estilo de los componentes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Contribuciones
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Las contribuciones son bienvenidas. Para realizar cambios, por favor, abre un issue o realiza un pull request.
 
-## Learn More
+# Licencia
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto se encuentra bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
