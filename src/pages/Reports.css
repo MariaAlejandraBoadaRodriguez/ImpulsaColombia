@@ -51,20 +51,27 @@
     text-align: center;
 }
 
-.back-button {
-    float: right;
-    margin: 20px;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: black;
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  
+  textarea.form-input {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.back-button:hover{
-    background-color: #ad8a1f;
-    transform: scale(1.05); /* Añade un pequeño efecto de agrandamiento al hacer hover */
-}
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  

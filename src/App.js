@@ -5,8 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Contact from './pages/Contact';
 import Donate from './pages/Donate';
 import Reports from './pages/Reports';
-import Ingresar from './pages/Ingresar';
-import Patrocinadores from './pages/Patrocinadores'
+import Register_Login from './pages/Register_Login';
 import './App.css';
 
 function App() {
@@ -21,8 +20,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/reports" element={<Reports />} />
-            <Route path="/ingresar" element={<Ingresar />} />
-            <Route path="/patrocinadores" element={<Patrocinadores />} />
+            <Route path="/Register_Login" element={<Register_Login />} />
           </Routes>
         ) : (
           <Routes>

@@ -8,8 +8,8 @@ function Header() {
     <header className="header">
       <h1>ImpulsaColombia</h1>
       <div className="header-buttons">
-        <button className="custom-button-h" onClick={() => navigate('/ingresar')}>Emprendedores</button>
-        <button className="custom-button-h" onClick={() => navigate('/patrocinadores')}>Patrocinadores</button>
+        <button className="custom-button-h" onClick={() => navigate('/Register_Login')}>👤 Iniciar Sesion
+        </button>
       </div>
     </header>
   );
