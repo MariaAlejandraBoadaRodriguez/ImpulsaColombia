@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ImpulsaColombia/static/css/main.cccc8dc6.css",
-    "main.js": "/ImpulsaColombia/static/js/main.b172aa39.js",
-    "static/js/453.8a69c399.chunk.js": "/ImpulsaColombia/static/js/453.8a69c399.chunk.js",
+    "main.js": "/ImpulsaColombia/static/js/main.a7217ce2.js",
+    "static/js/453.add92a59.chunk.js": "/ImpulsaColombia/static/js/453.add92a59.chunk.js",
     "static/media/fondo_1.jpg": "/ImpulsaColombia/static/media/fondo_1.b212538aecc7ee769e29.jpg",
     "index.html": "/ImpulsaColombia/index.html",
     "main.cccc8dc6.css.map": "/ImpulsaColombia/static/css/main.cccc8dc6.css.map",
-    "main.b172aa39.js.map": "/ImpulsaColombia/static/js/main.b172aa39.js.map",
-    "453.8a69c399.chunk.js.map": "/ImpulsaColombia/static/js/453.8a69c399.chunk.js.map"
+    "main.a7217ce2.js.map": "/ImpulsaColombia/static/js/main.a7217ce2.js.map",
+    "453.add92a59.chunk.js.map": "/ImpulsaColombia/static/js/453.add92a59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cccc8dc6.css",
-    "static/js/main.b172aa39.js"
+    "static/js/main.a7217ce2.js"
   ]
 }
