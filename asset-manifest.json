@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ImpulsaColombia/static/css/main.cccc8dc6.css",
-    "main.js": "/ImpulsaColombia/static/js/main.d193e294.js",
+    "main.js": "/ImpulsaColombia/static/js/main.ee96ff69.js",
     "static/js/453.add92a59.chunk.js": "/ImpulsaColombia/static/js/453.add92a59.chunk.js",
     "static/media/fondo_1.jpg": "/ImpulsaColombia/static/media/fondo_1.b212538aecc7ee769e29.jpg",
     "index.html": "/ImpulsaColombia/index.html",
     "main.cccc8dc6.css.map": "/ImpulsaColombia/static/css/main.cccc8dc6.css.map",
-    "main.d193e294.js.map": "/ImpulsaColombia/static/js/main.d193e294.js.map",
+    "main.ee96ff69.js.map": "/ImpulsaColombia/static/js/main.ee96ff69.js.map",
     "453.add92a59.chunk.js.map": "/ImpulsaColombia/static/js/453.add92a59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cccc8dc6.css",
-    "static/js/main.d193e294.js"
+    "static/js/main.ee96ff69.js"
   ]
 }
