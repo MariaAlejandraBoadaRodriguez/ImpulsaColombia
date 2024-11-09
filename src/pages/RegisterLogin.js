@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';  // Importa el hook useNavigate
-import './Register_Login.css';
+import './RegisterLogin.css';
 
 const Register_Login = () => {
   const [isRegistering, setIsRegistering] = useState(false);
