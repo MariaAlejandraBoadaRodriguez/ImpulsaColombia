@@ -136,7 +136,7 @@ const Register_Login = () => {
           onChange={handleSponsorModeChange}
           className="checkbox-input"
         />
-        <span>Registrarse como Empresario</span>
+        <span>Registrarse como Emprendedor</span>
       </div>
 
       {/* Mostrar campos adicionales solo si sponsorMode está activado */}
