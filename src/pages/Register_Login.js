@@ -77,7 +77,7 @@ const Register_Login = () => {
       console.log('Registrando usuario:', formData);
 
       // Redirigir al Dashboard
-      navigate('./Dashboard.js');
+      navigate('/');
     } catch (error) {
       console.error('Error registrando usuario:', error);
     }
@@ -88,9 +88,9 @@ const Register_Login = () => {
       console.log('Iniciando sesión con:', formData.email, formData.password);
       const userDoc = { sponsorMode: formData.sponsorMode };
       if (userDoc.sponsorMode) {
-        navigate('/dashboard');  // Redirige al dashboard de patrocinador
+        navigate('/');  // Redirige al dashboard de patrocinador
       } else {
-        navigate('/dashboard');  // Redirige al dashboard de emprendedor
+        navigate('/');  // Redirige al dashboard de emprendedor
       }
     } catch (error) {
       console.error('Error iniciando sesión:', error);
